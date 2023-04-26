@@ -11,6 +11,7 @@ import ru.netology.model.StorageFile;
 import ru.netology.model.User;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 public class TestData {
@@ -50,8 +51,6 @@ public class TestData {
     public static final EditFileNameRequest EDIT_FILE_NAME_REQUEST = new EditFileNameRequest(NEW_FILENAME);
 
     public static final MultipartFile MULTIPART_FILE = new MockMultipartFile(FILENAME_2, FILE_CONTENT_2);
-
-    public static final List<StorageFile> STORAGE_FILE_LIST = List.of(STORAGE_FILE_1, STORAGE_FILE_2);
 
     public static final FileResponse FILE_RESPONSE_1 = new FileResponse(FILENAME_1, SIZE_1);
     public static final FileResponse FILE_RESPONSE_2 = new FileResponse(FILENAME_2, SIZE_2);
