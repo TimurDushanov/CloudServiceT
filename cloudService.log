@@ -4363,3 +4363,41 @@ org.postgresql.util.PSQLException: Большие объекты не могут
 2023-04-25 18:38:28.609  INFO 13560 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-04-25 18:38:28.613  INFO 13560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-04-25 18:38:28.624  INFO 13560 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-25 21:06:58.094  INFO 2584 --- [main] ru.netology.CloudServiceTApplication     : Starting CloudServiceTApplication using Java 17.0.6 on DESKTOP-D98ULM4 with PID 2584 (C:\Netology\CloudServiceT\target\classes started by 88 in C:\Netology\CloudServiceT)
+2023-04-25 21:06:58.098  INFO 2584 --- [main] ru.netology.CloudServiceTApplication     : No active profile set, falling back to default profiles: default
+2023-04-25 21:06:59.298  INFO 2584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-25 21:06:59.418  INFO 2584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 101 ms. Found 2 JPA repository interfaces.
+2023-04-25 21:07:00.337  INFO 2584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5050 (http)
+2023-04-25 21:07:00.352  INFO 2584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-04-25 21:07:00.353  INFO 2584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.55]
+2023-04-25 21:07:00.497  INFO 2584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-04-25 21:07:00.498  INFO 2584 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2333 ms
+2023-04-25 21:07:00.910  INFO 2584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-25 21:07:01.202  INFO 2584 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-25 21:07:01.470  INFO 2584 --- [main] liquibase.database                       : Set default schema name to public
+2023-04-25 21:07:01.572  INFO 2584 --- [main] liquibase.lockservice                    : Successfully acquired change log lock
+2023-04-25 21:07:01.856  INFO 2584 --- [main] liquibase.changelog                      : Reading from public.databasechangelog
+2023-04-25 21:07:01.910  INFO 2584 --- [main] liquibase.lockservice                    : Successfully released change log lock
+2023-04-25 21:07:02.091  INFO 2584 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-25 21:07:02.196  INFO 2584 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2023-04-25 21:07:02.544  INFO 2584 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-25 21:07:02.781  INFO 2584 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-04-25 21:07:04.078  INFO 2584 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-25 21:07:04.090  INFO 2584 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25 21:07:04.970  WARN 2584 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-25 21:07:05.567  INFO 2584 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@309d54ac, org.springframework.security.web.context.SecurityContextPersistenceFilter@68ea1eb5, org.springframework.security.web.header.HeaderWriterFilter@49482761, org.springframework.web.filter.CorsFilter@390978, org.springframework.security.web.authentication.logout.LogoutFilter@da5b46f, ru.netology.jwt.JwtRequestFilter@50b2ba2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d7c00de, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6046fba0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@561c031, org.springframework.security.web.session.SessionManagementFilter@6f9999f6, org.springframework.security.web.access.ExceptionTranslationFilter@47ab3688, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@df04d12]
+2023-04-25 21:07:06.332  INFO 2584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5050 (http) with context path ''
+2023-04-25 21:07:06.348  INFO 2584 --- [main] ru.netology.CloudServiceTApplication     : Started CloudServiceTApplication in 9.015 seconds (JVM running for 11.177)
+2023-04-25 21:08:58.919  INFO 2584 --- [http-nio-5050-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-25 21:08:58.920  INFO 2584 --- [http-nio-5050-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-25 21:08:58.921  INFO 2584 --- [http-nio-5050-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-25 21:08:58.953  WARN 2584 --- [http-nio-5050-exec-2] ru.netology.jwt.JwtRequestFilter         : JWT Token does not begin with Bearer String
+2023-04-25 21:08:59.984  INFO 2584 --- [http-nio-5050-exec-2] r.n.service.AuthenticationService        : User timur@mail.ru authentication. JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aW11ckBtYWlsLnJ1IiwiZXhwIjoxNjgyNDY0MTM5LCJpYXQiOjE2ODI0NDYxMzl9.za2r5sg9KfHq0eBihlk5uWxPz9nrZ1LWuNYAg8ORaCsw1QfO7Q9nUTM4lfqYwLkyE4y9Fe576xYMWHE0JJBNIw
+2023-04-25 21:09:12.349  WARN 2584 --- [http-nio-5050-exec-3] ru.netology.jwt.JwtRequestFilter         : JWT Token does not begin with Bearer String
+2023-04-25 21:09:12.359  WARN 2584 --- [http-nio-5050-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'auth-token' for method parameter type String is not present]
+2023-04-25 21:09:29.845  WARN 2584 --- [http-nio-5050-exec-5] ru.netology.jwt.JwtRequestFilter         : JWT Token does not begin with Bearer String
+2023-04-25 21:09:30.380  INFO 2584 --- [http-nio-5050-exec-5] r.n.service.AuthenticationService        : User timur@mail.ru authentication. JWT: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0aW11ckBtYWlsLnJ1IiwiZXhwIjoxNjgyNDY0MTcwLCJpYXQiOjE2ODI0NDYxNzB9.w3IKzLTapThxz8_tZ7vVJ7RmE79cbilHXJ6EO-_PvZX-Hea2qpKAecc6CnUqW56rCb3QXafB148XlewM3HBTLg
+2023-04-25 21:09:30.458  INFO 2584 --- [http-nio-5050-exec-8] ru.netology.service.StorageFileService   : Success get all files. User timur@mail.ru
+2023-04-25 21:09:37.836  INFO 2584 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-25 21:09:37.841  INFO 2584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-25 21:09:37.868  INFO 2584 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

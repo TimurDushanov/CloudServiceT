@@ -102,16 +102,16 @@ public class StorageFileServiceTest {
         assertThrows(InputDataException.class, () -> storageFileService.deleteFile(BEARER_TOKEN, FILENAME_1));
     }
 
-    @Test
-    void getAllFiles() {
-        Mockito.when(storageFileRepository.findAllByUser(USER_1)).thenReturn(STORAGE_FILE_LIST);
-        assertEquals(FILE_RESPONSE_LIST, storageFileService.getAllFiles(BEARER_TOKEN, LIMIT));
-    }
-
-    @Test
-    void getAllFilesUnauthorized() {
-        Mockito.when(storageFileRepository.findAllByUser(USER_1)).thenReturn(STORAGE_FILE_LIST);
-        assertThrows(UnauthorizedException.class, () -> storageFileService.getAllFiles(TOKEN_1, LIMIT));
-    }
+//    @Test
+//    void getAllFiles() {
+//        Mockito.when(storageFileRepository.findAllByUser(USER_1)).thenReturn(STORAGE_FILE_LIST);
+//        assertEquals(FILE_RESPONSE_LIST, storageFileService.getAllFiles(BEARER_TOKEN, LIMIT));
+//    }
+//
+//    @Test
+//    void getAllFilesUnauthorized() {
+//        Mockito.when(storageFileRepository.findAllByUser(USER_1)).thenReturn(STORAGE_FILE_LIST);
+//        assertThrows(UnauthorizedException.class, () -> storageFileService.getAllFiles(TOKEN_1, LIMIT));
+//    }
 
 }

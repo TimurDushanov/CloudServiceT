@@ -13,8 +13,9 @@ import org.mockito.quality.Strictness;
 import ru.netology.exception.UnauthorizedException;
 import ru.netology.repository.UserRepository;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThrows;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static ru.netology.TestData.*;
 
 @ExtendWith(MockitoExtension.class)
